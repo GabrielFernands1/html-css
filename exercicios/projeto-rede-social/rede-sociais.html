@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes Sociais</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        
+    
+    
+    html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.image-container {
+    position: relative; /* Define o contexto de posicionamento para os elementos filhos */
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Imagem de fundo */
+.background-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantém a proporção da imagem e cobre a tela inteira */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Fundo mais baixo na hierarquia */
+}
+
+/* Imagens sobrepostas */
+.overlay-img {
+    position: absolute;
+    z-index: 2; /* Para garantir que fiquem sobre a imagem de fundo */
+    text-align: center;
+}
+
+/* Personaliza a posição de cada imagem sobreposta */
+.img1 {
+    top: 10%;
+    left: 10%;
+    width: 200px;
+    background-position: center center;
+
+top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%); /* Move a imagem para o centro exato */}
+    .social-icons {
+    position: fixed; /* Fixa as bolinhas na tela, mesmo com rolagem */
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 2; /* Garante que as bolinhas fiquem sobre a imagem de fundo */
+}
+
+/* Estilo de cada bolinha */
+.circle {
+    width: 200px;
+    height: 50px;
+    
+    border-radius: 50%; /* Deixa a div circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Mudança de cor ao passar o mouse */
+.circle:hover {
+    background-color: #005582;
+}
+
+/* Ícones das redes sociais */
+.circle i {
+    font-size: 40px;
+    color: white;
+    border-radius: 50%; /* Deixa o ícone circular */
+}
+.circle {
+    width: 50px;
+    height: 50px;
+    
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Ajuste para as imagens dentro das bolinhas */
+.circle img {
+    width: 100%; /* A imagem ocupará 60% do tamanho da bolinha */
+    height: 100%; /* Mantém a imagem dentro das bolinhas, com proporções iguais */
+    object-fit: contain; /* Garante que a imagem não seja cortada ou distorcida */
+    border-radius: 50%; /* Deixa o ícone circular */
+}
+
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="imagens/fundo-madeira.jpg" alt="Imagem de fundo" class="background-img">
+        <img style="text-align: center;" src="imagens/frame-iphone.png" alt="Imagem sobreposta 1" class="overlay-img img1">
+        
+    </div>
+    <div class="social-icons">
+        <div class="circle">
+            <img src="imagens/logo-home.jpg" alt="Facebook">
+        </div>
+        <div class="circle">
+            <img src="imagens/logo-youtube.jpg" alt="Twitter">
+        </div>
+        <div class="circle">
+            <img src="imagens/logo-github.jpg" alt="Instagram">
+        </div>
+        <div class="circle">
+            <img src="imagens/logo-instagram.jpg" alt="LinkedIn">
+        </div>
+        <div class="circle">
+            <img src="imagens/logo-twitter.jpg" alt="YouTube">
+        </div>
+        <div class="circle">
+            <img src="imagens/logo-facebook.jpg" alt="WhatsApp">
+        </div>
+    </div>
+</body>
+</html>
