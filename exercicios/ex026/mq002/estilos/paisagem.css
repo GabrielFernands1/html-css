@@ -4,3 +4,7 @@
     padding: 0px;
 }
 /* configurações deitado */
+body {
+    background-image: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom;
+}
