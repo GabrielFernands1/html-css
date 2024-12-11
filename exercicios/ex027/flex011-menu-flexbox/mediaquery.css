@@ -3,12 +3,13 @@
     margin: 0px;
     padding: 0px;
 }
-@media screen and (min-width:468px) and (max-width:580px)  {
-    header > nav {
-        flex-flow: column;
-        flex: auto;
+header, header > nav  {
+        flex-flow: column nowrap;
+        
     }
-    header > h1 {
-        flex:initial;
-    }
+header > h1 {
+    flex-basis: 50px;
+}
+header > nav > a {
+    width:90vw
 }
