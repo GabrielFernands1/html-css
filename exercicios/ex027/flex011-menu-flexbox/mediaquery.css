@@ -1,0 +1,14 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+@media screen and (min-width:468px) and (max-width:580px)  {
+    header > nav {
+        flex-flow: column;
+        flex: auto;
+    }
+    header > h1 {
+        flex:initial;
+    }
+}
